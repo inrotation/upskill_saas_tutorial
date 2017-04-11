@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+ source 'https://rubygems.org'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -35,6 +35,10 @@ gem 'jbuilder', '2.5.0'
 # gem 'capistrano-rails', group: :development
 
 gem 'bootstrap-sass', '3.3.7'
+
+# Use Font Awesome sass gem
+gem 'font-awesome-sass', '~> 4.6.2'
+
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
